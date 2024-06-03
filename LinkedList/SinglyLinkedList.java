@@ -1,7 +1,5 @@
 package LinkedList;
 
-import javax.naming.LinkException;
-
 public class SinglyLinkedList {
     static Node head;
 
