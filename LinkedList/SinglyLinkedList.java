@@ -23,6 +23,20 @@ public class SinglyLinkedList {
         }
     } 
 
+    public static void insertAtPos(int val,int pos){
+        Node newNode = new Node(val);
+        if(pos == 0){
+            insertAtBeginning(val);
+            return;
+        }
+        Node temp = head;
+        for(int i=1 ; i<pos ; i++){
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
     public static void display(){
         Node temp = head;
         while(temp!=null){
@@ -34,6 +48,9 @@ public class SinglyLinkedList {
     public static void main(String[] args) {
         insertAtBeginning(5);
         insertAtBeginning(9);
+        display();
+        System.out.println("After inserting at position: ");
+        insertAtPos(7, 1);
         display();
     }
 }
