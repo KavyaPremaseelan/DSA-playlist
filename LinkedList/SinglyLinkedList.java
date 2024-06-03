@@ -32,12 +32,24 @@ public class SinglyLinkedList {
         Node temp = head;
         for(int i=1 ; i<pos ; i++){
             temp = temp.next;
+            if(temp == null){
+                throw new IndexOutOfBoundsException("Invalid position");
+            }
         }
         newNode.next = temp.next;
         temp.next = newNode;
     }
 
     public static void deleteAtPos(int pos){
+        if(head == null){
+            throw new IndexOutOfBoundsException("List is empty");
+        }
+
+        if(pos == 0){
+            deleteAtBeginning();
+            return;
+        }
+
         Node temp = head;
         Node prev = null;
         for(int i=1 ; i<=pos ; i++){
@@ -45,6 +57,13 @@ public class SinglyLinkedList {
             temp = temp.next;
         }
         prev.next = temp.next;
+    }
+
+    public static void deleteAtBeginning(){
+        if(head == null){
+            throw new IndexOutOfBoundsException("List is empty");
+        }
+        head = head.next;
     }
 
     public static void display(){
@@ -63,7 +82,7 @@ public class SinglyLinkedList {
         insertAtPos(7, 1);
         display();
         System.out.println("After deleting");
-        deleteAtPos(1);
+        deleteAtPos(0);
         display();
     }
 }
