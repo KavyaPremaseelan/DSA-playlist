@@ -37,6 +37,16 @@ public class SinglyLinkedList {
         temp.next = newNode;
     }
 
+    public static void deleteAtPos(int pos){
+        Node temp = head;
+        Node prev = null;
+        for(int i=1 ; i<=pos ; i++){
+            prev = temp;
+            temp = temp.next;
+        }
+        prev.next = temp.next;
+    }
+
     public static void display(){
         Node temp = head;
         while(temp!=null){
@@ -51,6 +61,9 @@ public class SinglyLinkedList {
         display();
         System.out.println("After inserting at position: ");
         insertAtPos(7, 1);
+        display();
+        System.out.println("After deleting");
+        deleteAtPos(1);
         display();
     }
 }
