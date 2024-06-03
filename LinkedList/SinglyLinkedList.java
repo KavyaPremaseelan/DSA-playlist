@@ -66,6 +66,19 @@ public class SinglyLinkedList {
         head = head.next;
     }
 
+    public static void reverse(){
+        Node prev = null;
+        Node current = head;
+        Node next = head.next;
+        while (current!=null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head = prev;
+    }
+
     public static void display(){
         Node temp = head;
         while(temp!=null){
@@ -78,11 +91,17 @@ public class SinglyLinkedList {
         insertAtBeginning(5);
         insertAtBeginning(9);
         display();
+        System.out.println();
         System.out.println("After inserting at position: ");
         insertAtPos(7, 1);
         display();
+        System.out.println();
         System.out.println("After deleting");
         deleteAtPos(0);
+        display();
+        System.out.println();
+        System.out.println("Reverse : ");
+        reverse();
         display();
     }
 }
