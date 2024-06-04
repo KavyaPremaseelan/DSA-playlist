@@ -28,6 +28,6 @@
 
    ## LINKED LIST
 
-   - Singly Linked List
-   - Doubly Linked List
+ - Singly Linked List
+ - Doubly Linked List
 
