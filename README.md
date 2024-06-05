@@ -25,3 +25,9 @@
 
  - For Linear Search - https://youtu.be/D5oqrNi_RGw?si=tOtLvy6tdGtohLyF
  - For Binary Search - https://youtu.be/p_MZraK3w2s?si=-4a21w-QEym5Si5w
+
+## LINKED LIST
+
+ - Singly Linked List
+ - Doubly Linked List
+
