@@ -30,4 +30,14 @@
 
  - Singly Linked List
  - Doubly Linked List
+ - Circular Linked List
+
+#### Resources
+
+- For Singly Linked List - https://youtu.be/kOUtvxXb37A?si=4mCG7IT6hUnxGGJT
+                           https://youtu.be/zbeSoVRGro4?si=EcKVbstBd2F8TZDb
+                           https://youtu.be/dYS09QpjSK8?si=tlno8p8AwYIO5CWe
+- For Doubly Linked List - https://youtu.be/uLLPp3cqEds?si=FtY4z4xkR7jVPG9q
+- For Circular Linked List - https://youtu.be/JrMjIcqwMlU?si=n7js6a1W1UD_iy0J
+
 
